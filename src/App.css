@@ -1,38 +1,147 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 140, 255, 0.555);
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.right {
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.search {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.search .fa {
+  color: rgba(0, 140, 255, 0.555);
+}
+
+.lock {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.lock .fa {
+  color: rgba(0, 140, 255, 0.555);
+}
+
+.left2 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.delete {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 140, 255, 0.555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.delete .fa {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right1 {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  background: white;
+  width: 70%;
+  height: 10vh;
+  margin: auto;
+  display: none;
+}
+
+.nav1{
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  
+}
+
+.logo{
+  margin: 20px;
+}
+
+.toggle{
+  margin: 20px;
+  margin-left: auto;
+}
+
+.toggle .fa{
+  color: rgba(0, 140, 255, 0.555);
+}
+
+.leftt{
+  width: 70%;
+}
+
+.rightt{
+  width: 70%;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    background: none;
   }
-  to {
-    transform: rotate(360deg);
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+    background-color: rgba(0, 140, 255, 0.555);
+    border-radius: 5px;
+  }
+  .navbar{
+    display: block;
+  }
+  .leftt{
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .rightt{
+    width: 100%;
+    flex-wrap: wrap;
+    /* margin: 10px; */
+  }
+  .navbar, .nav1{
+    width: 100%;
   }
 }
